@@ -12,5 +12,5 @@ def analyze_text(text):
     calculation = (e/alphas) * 100
     alphastr = str(alphas)
     estring = str(e)
-    result = str("The text contains " + alphastr + " alphabetic characters, of which " + estring + "({0:.2f}%) are 'e'.".format(calculation))
+    result = str("The text contains " + alphastr + " alphabetic characters, of which " + estring + " ({0:.2f}%) are 'e'.".format(calculation))
     return result
