@@ -9,9 +9,8 @@ def analyze_text(text):
             alphas += 1
         elif char.isalpha() == True:
             alphas += 1
-    calculation = round(((e/alphas) * 100), 2)
-    percentage = "(" + str(calculation) + "%)"
+    calculation = (e/alphas) * 100
     alphastr = str(alphas)
     estring = str(e)
-    result = str("The text contains " + alphastr + " alphabetic characters, of which " + estring + " " + percentage + " are 'e'.")
+    result = str("The text contains " + alphastr + " alphabetic characters, of which " + estring + "({0:.2f}%) are 'e'.".format(calculation))
     return result
